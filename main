@@ -5,3 +5,18 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/VellojinGuillot/rock-paper-csissors-game-main.py.git
 git push -u origin main
+
+from RockPaperCissors import RPSGame
+
+
+selection = input("Enter a number between 1, 2 or 3 to pick a game: ")
+if selection == 1:
+    print("you have selected Rock PaperCsissors game!")
+    if selection not in selection.input():
+     raise ValueError("Invalid choice. Please choose either 1, 2 or 3.")
+    RPSGame()
+
+
+if __name__ == '__main__':
+    RPSGame()
+    
